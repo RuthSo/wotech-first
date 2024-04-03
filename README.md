@@ -12,3 +12,23 @@ Readme file uses markdown syntax to edit any text, formulas or codes.
 2. Python AI tool
 3. My own social network
 
+## My favourite part of code
+
+```java
+var temperature = 10;
+    
+    if (temperature <= 5) {
+      System.out.println("Wear a warm jacket!");
+    }
+    else if (temperature <= 15) {
+      System.out.println("Wear a T-shirt!");
+    }
+    else if (temperature <= 30) {
+      System.out.println("Wear a swimming suite!");
+    }
+
+    else {
+      System.out.println("Need cooling");
+    }
+```
+
