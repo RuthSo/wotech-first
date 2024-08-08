@@ -1,0 +1,21 @@
+package com.datorium.Datorium.API.Controllers;
+
+import com.datorium.Datorium.API.DTO.Message;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping ("/user")
+public class MessageController {
+    private MessageService messageService;
+    public MessageController(){
+        messageService = new MessageService();
+    }
+
+    @PostMapping("/send") //localhost:8080/message
+    public String send(@RequestBody Message message){
+        return messageService.send(message);
+    }
+}
